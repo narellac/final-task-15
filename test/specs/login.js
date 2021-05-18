@@ -57,6 +57,8 @@ describe("Login automation", () =>{
       LoginPage.login("standard_user", "secret_sauce");
       LoginPage.btnLogin.click();
       expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
+      browser.refresh();
+      browser.pause(2000);
     });
   });
 });

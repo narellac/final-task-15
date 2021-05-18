@@ -22,6 +22,7 @@ describe("Login automation", () =>{
       inventoryPage.btnToShopOne.click();
       inventoryPage.btnToShopTwo.click();
       inventoryPage.btnToShopThree.click();
+      browser.refresh();
       browser.pause(2000);
     });
   });

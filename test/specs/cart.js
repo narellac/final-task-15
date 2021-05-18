@@ -32,6 +32,7 @@ describe("Auto start and load items to cart", () => {
     it("if I click on the CONTINUE SHOPPING box the page must go to the inventory", () => {
       cartPage.btnContShopping.click();
       expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
+      browser.refresh();
       browser.pause(2000);
     });
   });
