@@ -1,11 +1,11 @@
-const cartPage = require("../aStandard_user/cart.page");
+const cartPage = require("../dPerformance_glitch_user/k.cart.page");
 
 describe("Auto start and load items to cart", () => {
   beforeAll("Open browser", () => {
     cartPage.open();
   });
   it("if username and password are right let me in", () => {
-    cartPage.login("standard_user", "secret_sauce");
+    cartPage.login("performance_glitch_user", "secret_sauce");
     cartPage.btnLogin.click();
     expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
     browser.pause(2000);

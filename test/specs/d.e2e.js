@@ -1,4 +1,4 @@
-const e2ePage = require("../pageobjects/e2e.page");
+const e2ePage = require("../aStandard_user/d.e2e.page");
 
 describe("Auto start and load items to cart", () => {
   beforeAll("Open browser", () => {
@@ -48,7 +48,6 @@ describe("Auto start and load items to cart", () => {
       e2ePage.btnList.click();
       e2ePage.logout.click();
       expect(browser).toHaveUrl('https://www.saucedemo.com/');
-      browser.refresh();
       browser.pause(2000);
     });
   });

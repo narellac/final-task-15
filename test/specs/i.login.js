@@ -1,4 +1,4 @@
-const LoginPage = require("../pageobjects/login.page");
+const LoginPage = require("../dPerformance_glitch_user/i.login.page");
 
 describe("Login automation", () =>{
   beforeAll("Open browser", () => {
@@ -7,14 +7,14 @@ describe("Login automation", () =>{
   });
   describe("password test", () => {
     it("if password input is empty show the proper message", () => {
-      LoginPage.setUser("standard_user");
+      LoginPage.setUser("performance_glitch_user");
       LoginPage.inputPassword.keys("Tab");
       LoginPage.btnLogin.click();
       expect(LoginPage.alertBox).toHaveText('');
       browser.pause(2000);
     });
     it("if password is invalid show the proper message", () => {
-      LoginPage.setUser("standard_user");
+      LoginPage.setUser("performance_glitch_user");
       LoginPage.setPassword("contraseña");
       LoginPage.btnLogin.click();
       expect(LoginPage.alertBox).toHaveText('');
@@ -54,7 +54,7 @@ describe("Login automation", () =>{
       browser.pause(2000);
     });
     it("if username and password are right let me in", () => {
-      LoginPage.login("standard_user", "secret_sauce");
+      LoginPage.login("performance_glitch_user", "secret_sauce");
       LoginPage.btnLogin.click();
       expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
       browser.refresh();
@@ -62,4 +62,3 @@ describe("Login automation", () =>{
     });
   });
 });
-

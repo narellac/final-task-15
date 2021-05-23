@@ -1,4 +1,4 @@
-const inventoryPage = require("../pageobjects/inventory.page");
+const inventoryPage = require("../aStandard_user/b.inventory.page");
 
 describe("Login automation", () =>{
   beforeAll("Open browser", () => {
