@@ -26,7 +26,7 @@ A max instance of 10 simultaneous tests was chosen to shorten the times but if y
 
 To run this test, in addition to referring to the point "Necessary steps" previously explained, you must enter a terminal and write the following in it:
 
-npm run test
+[npm run test]
 
 With this, the tests created for each of the users will automatically start to run.
 
