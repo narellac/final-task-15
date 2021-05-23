@@ -9,7 +9,7 @@ class checkoutPage {
   get btnRemove () { return $$('.cart_button') }
   get btnCheckOut () { return $('#checkout') }
   get inputName () { return $('#first-name') }
-  get inputLastName () { return $$('.form-input')[1] }
+  get inputLastName () { return $('#last-name') }
   get inputPostalCode () { return $('#postal-code') }
   get btnContinue () { return $('#continue') }
   get alertBox () { return $$('.error-message-container')[0] }
